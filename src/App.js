@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import './App.css';
-import Checkout from './Checkout';
-import Header from './Header';
-import Home from './Home';
+import './App.css'
+import Checkout from './Checkout'
+import Header from './Header'
+import Home from './Home'
 import Login from './Login'
+import { auth } from './firebase'
+
+
+
 function App() {
+
+  useEffect(() => {
+
+  }, [])
+
+
   return (
     <Router>
       <div className="app">
